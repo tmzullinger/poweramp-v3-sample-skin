@@ -8,6 +8,25 @@
 	<style name="SampleSkinAAA" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Default">
 		<item name="com.maxmpz.audioplayer:colorBgPrimaryAlpha">#2fff</item>
 
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums">0dp</item>
+
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_zoomed">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_zoomed">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_other_zoomed">matchHeight</item>
+
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_other_grid">matchHeight</item>
+
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid_zoomed">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid_zoomed">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_other_grid_zoomed">matchHeight</item>
+
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">0dp</item>
+
 		<!-- First, as we have no enough room for track info below AA, move sub-aa buttons to the top to free some space.
 				 Ideally, sub-aa buttons (visualization, sleeptimer, repeat, shuffle) should be polished more for this style of layout, e.g. background may be removed, icons redrawn, etc. -->
 		<item name="com.maxmpz.audioplayer:TopSubAAButtons">@style/AAA_TopSubAAButtons</item>
