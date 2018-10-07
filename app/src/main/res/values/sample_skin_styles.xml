@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
-	<!-- Main theme, derived from Poweramp base white theme. We override only the attributes we need.
+	<!-- Main theme, derived from Poweramp base black theme. We override only the attributes we need.
 	     Poweramp styles/attributes/values start with "com.maxmpz.audioplayer:", otherwise syntax is the standard Android xml resource syntax
 	 -->
-	<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Default">
+	<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Black">
 		<item name="com.maxmpz.audioplayer:corners_navbar">0dp</item>
 
 		<item name="com.maxmpz.audioplayer:corners_popup">2dp</item>
@@ -254,11 +254,11 @@
 
 
 	<style name="Navbar_scene_navbar_1line_sheet_transparentNavbar" parent="Navbar_scene_navbar_1line_sheet">
-		<item name="android:background">#fff</item><!-- Apply white background for scenes, so navbar has visible background in lists and when expanded -->
+		<item name="android:background">#000</item><!-- Apply black background for scenes, so navbar has visible background in lists and when expanded -->
 		<item name="com.maxmpz.audioplayer:applyViewParams">true</item><!-- Enables background changes for scene -->
 	</style>
 	<style name="Navbar_scene_navbar_2lines_transparentNavbar" parent="Navbar_scene_navbar_2lines">
-		<item name="android:background">#fff</item>
+		<item name="android:background">#000</item>
 		<item name="com.maxmpz.audioplayer:applyViewParams">true</item>
 	</style>
 
@@ -268,7 +268,7 @@
 	</style>
 
 	<style name="TopFitsNavigationBarView_scenes_non_main" parent="com.maxmpz.audioplayer:TopFitsNavigationBarView_scenes_non_main">
-		<item name="android:background">#fff</item>
+		<item name="android:background">#000</item>
 		<item name="com.maxmpz.audioplayer:applyViewParams">true</item>
 	</style>
 

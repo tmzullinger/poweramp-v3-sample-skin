@@ -1,12 +1,12 @@
 <resources>
-	<string name="app_name">Poweramp v3 Skin Sample</string>
+	<string name="app_name">Poweramp v3 Skin Sample Black</string>
 
-	<string name="start_with_sample_skin">Start Poweramp\nwith Sample Skin</string>
-	<string name="start_with_sample_aaa_skin">Start Poweramp\nwith Sample Skin Alternative Layout</string>
+	<string name="start_with_sample_skin">Start Poweramp\nwith Sample Skin Black</string>
+	<string name="start_with_sample_aaa_skin">Start Poweramp\nwith Sample Skin Black Alternative Layout</string>
 
 	<string name="installation_ok">Successfully installed</string>
 
-	<string name="skin_sample">Sample Skin</string>
+	<string name="skin_sample">Sample Skin Black</string>
 	<string name="skin_author">Sample Skin Author</string>
 	<string name="skin_sample_description">This is a sample skin</string>
 	<string name="open_theme_settings">Open Theme Settings</string>
@@ -22,7 +22,7 @@
 	<string name="skin_transparent_navbar">Transparent Navbars</string>
 	<string name="skin_summary_transparent_navbar">Both, Poweramp and Android navigation bars are transparent</string>
 
-	<string name="skin_sample_aaa">Sample Skin Alternative Layout</string>
+	<string name="skin_sample_aaa">Sample Black Skin Alternative Layout</string>
 	<string name="skin_sample_aaa_description">Plain seekbar, labels don\'t overlap image in main UI and grids</string>
 
 	<string name="skin_seekbar_and_waveseek">Static waveseek + seek bar</string>

@@ -7,11 +7,11 @@
 		description="@string/skin_sample_description"
 		style="@style/SampleSkin"
 	>
-		<!-- Checkable option. In this case we use built-in ActivityTheme_Whitepro_StaticSeekbar substyle. We may need own substyle if we modify theme more -->
+		<!-- Checkable option. In this case we use built-in ActivityTheme_Blackpro_StaticSeekbar substyle. We may need own substyle if we modify theme more -->
 		<option
 			key="static_seekbar"
 			name="@string/skin_static_seekbar"
-			overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_StaticSeekbar"
+			overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Blackpro_StaticSeekbar"
 			checkedByDefault="false"
 		/>
 

@@ -5,8 +5,98 @@
 	<!-- Also see values-land/sample_skin_aaa_styles.xml -->
 	<!-- Alternative Album Art skin, includes alternative main AA and grid items (labels below images), plain seek	bar, pro buttons -->
 
-	<style name="SampleSkinAAA" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Default">
-		<item name="com.maxmpz.audioplayer:colorBgPrimaryAlpha">#2fff</item>
+	<style name="SampleSkinAAA" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Black">
+		<!-- NOTE: any alpha value in this color enables transparent Android status bar and appropriate Poweramp layout changes, i.e. layout spans behind that bar.
+			 Poweramp places id/status_bar_bg view under status bar, with statusBarBg drawable, which can be any drawable, not just color.
+			 Use either android:statusBarColor for just color, or statusBarBg, but avoid using both to limit overdraw (set other to transparent/#0000)-->
+		<item name="com.maxmpz.audioplayer:android:statusBarColor">@android:color/transparent</item>
+		<item name="com.maxmpz.audioplayer:android:windowLightStatusBar">false</item>
+		<item name="com.maxmpz.audioplayer:android:windowLightNavigationBar">false</item><!-- For 9.0 -->
+		<item name="com.maxmpz.audioplayer:windowLightNavigationBar">false</item>
+
+		<!-- NOTE: any alpha value in this color enables transparent android navigation bar and appropriate Poweramp layout changes, i.e. layout spans behind that bar.
+			 Poweramp places id/navigation_bar_bg view under navigation bar, with navigationBarBg drawable, which can be any drawable, not just color.
+			 Use either android:navigationBarColor for just color, or navigationBarBg, but avoid using both to limit overdraw (set other to transparent/#0000)
+
+			 NOTE: some devices may always ignore these colors (LGs)
+		-->
+		<item name="com.maxmpz.audioplayer:android:navigationBarColor">#000</item>
+		<item name="com.maxmpz.audioplayer:statusBarBg">#55000000</item><!-- Drawable/color for view under Android status bar.  -->
+		<item name="com.maxmpz.audioplayer:navigationBarBg">#0000</item><!-- Drawable/color for view under Android navigation bar. -->
+
+		<item name="com.maxmpz.audioplayer:colorPrimary">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorAccent">#fff</item>
+
+		<item name="com.maxmpz.audioplayer:colorControlNormal">#fff</item><!-- E.g. checkboxes -->
+		<item name="com.maxmpz.audioplayer:colorControlActivated">#fff</item><!-- E.g. checkboxes -->
+		<item name="com.maxmpz.audioplayer:colorControlHighlight">#3fff</item><!-- E.g. ripple color for most selectable controls/buttons/items -->
+
+		<item name="com.maxmpz.audioplayer:android:textColorPrimary">#fff</item>
+		<item name="com.maxmpz.audioplayer:android:textColorSecondary">#aaa</item>
+		<item name="com.maxmpz.audioplayer:android:textColorTertiary">#bbb</item>
+		<item name="com.maxmpz.audioplayer:android:textColorPrimaryInverse">#fff</item>
+
+		<item name="com.maxmpz.audioplayer:colorIconPrimary">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorIconPrimaryForced">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorIconInverse">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorIconInverseForced">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorIconDisabled">#8ccc</item><!-- NOTE: used only in few places, e.g. vis/repeat/shuffle icons (alt) -->
+
+		<item name="com.maxmpz.audioplayer:colorBgPrimary">#222</item>
+		<item name="com.maxmpz.audioplayer:colorBgPrimaryAlpha">#4333</item>
+		<item name="com.maxmpz.audioplayer:colorBgLessAlpha">#d000</item>
+		<item name="com.maxmpz.audioplayer:colorInverse">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorBgInverse">#000</item>
+		<item name="com.maxmpz.audioplayer:colorBgInverseChecked">#222</item>
+		<item name="com.maxmpz.audioplayer:colorStroke">#aaa</item>
+		<item name="com.maxmpz.audioplayer:colorLessContrast">#ccc</item>
+
+		<item name="com.maxmpz.audioplayer:colorShade">#88000000</item>
+		<item name="com.maxmpz.audioplayer:colorBgLight">#0f0f0f</item><!-- Used ATM for Search Frame bg -->
+
+		<item name="com.maxmpz.audioplayer:colorAABgColor">#000</item>
+
+		<item name="com.maxmpz.audioplayer:colorFastScroller">#888</item>
+		<item name="com.maxmpz.audioplayer:colorFastScrollerPressed">#444</item>
+		<item name="com.maxmpz.audioplayer:colorFastScrollerTrack">#0000</item>
+		<item name="com.maxmpz.audioplayer:colorScrollPopupBg">#a555</item>
+
+		<item name="com.maxmpz.audioplayer:colorFrsSelectionBgRipple">#eee</item>
+		<item name="com.maxmpz.audioplayer:colorFrsSelectionBgPressed">#3fff</item>
+		<item name="com.maxmpz.audioplayer:colorFrsSelectionBg">#1fff</item>
+		<item name="com.maxmpz.audioplayer:colorEqKnobsLines1">#aaa</item>
+		<item name="com.maxmpz.audioplayer:colorEqKnobsLines2">#333</item>
+
+		<item name="com.maxmpz.audioplayer:colorFrs">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorFrsTone">#afff</item>
+		<item name="com.maxmpz.audioplayer:colorFrsToneFill">#28ffffff</item>
+		<item name="com.maxmpz.audioplayer:colorFrsBackline">#777</item>
+
+		<item name="com.maxmpz.audioplayer:colorKnobHolePressed">#ccc</item>
+		<item name="com.maxmpz.audioplayer:colorKnobHole">#555</item>
+		<item name="com.maxmpz.audioplayer:colorKnobRipple">#676767</item>
+		<item name="com.maxmpz.audioplayer:colorKnob">#444</item>
+		<item name="com.maxmpz.audioplayer:colorKnobIndicator">#ccc</item>
+		<item name="com.maxmpz.audioplayer:colorKnobIndicatorPressed">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorKnobIndicatorDisabled">#333</item>
+
+		<item name="com.maxmpz.audioplayer:colorKnobPressed">#fff</item>
+		<item name="com.maxmpz.audioplayer:colorKnobBg">#222</item>
+		<item name="com.maxmpz.audioplayer:colorKnobDisabled">#111</item>
+		<item name="com.maxmpz.audioplayer:colorKnobHoleDisabled">#111</item>
+		<item name="com.maxmpz.audioplayer:colorPreampBg">#111</item>
+
+		<item name="com.maxmpz.audioplayer:colorTrackMeta">#999</item>
+		<item name="com.maxmpz.audioplayer:colorSeparator">#FF888888</item>
+
+		<item name="com.maxmpz.audioplayer:colorNavbarIconsLessContrast">#999</item><!-- NOTE: not used in default theme -->
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#181818</item>
+
+		<item name="com.maxmpz.audioplayer:colorItemActive">#f00</item>
+
+		<item name="com.maxmpz.audioplayer:EqMilkFrs_presetUri">internal://#fft2</item>
+
+		<item name="com.maxmpz.audioplayer:colorBgPrimaryAlpha">#2000</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks">0dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_albums">0dp</item>
@@ -461,7 +551,7 @@
 
 	<style name="AAA_ItemTrackAAPanel">
 		<item name="android:visibility">invisible</item><!-- Should be invisible by default so this view is faded-in for aa scenes -->
-		<item name="android:background">#5fff</item>
+		<item name="android:background">#5000</item>
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">@dimen/AAA_ListSubstyle_aaPaddingBottom</item><!-- Matches the area used for title/line2 below AA -->
 		<item name="android:layout_gravity">bottom</item>
